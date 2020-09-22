@@ -1,17 +1,18 @@
-﻿﻿using DataStructures.Stack.Abstractions;
+﻿using DataStructures.Queue.Abstractions;
 
-namespace DataStructures.Stack.Concrete
+namespace DataStructures.Queue.Concrete
 {
-    public class StackViaList<T> : IStack<T>
+    public class QueueViaLinkedList<T> : IQueue<T>
     {
-        public int Count { get; }
         public bool IsEmpty { get; }
-        public void Push(T entity)
+        public bool IsFull { get; }
+        public int Count { get; }
+        public void Enqueue(T entity)
         {
             throw new System.NotImplementedException();
         }
 
-        public T Pop()
+        public T Dequeue()
         {
             throw new System.NotImplementedException();
         }

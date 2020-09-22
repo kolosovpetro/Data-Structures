@@ -7,12 +7,12 @@ using NUnit.Framework;
 namespace DataStructures.Stack.Tests.QueueTests
 {
     [TestFixture]
-    public class QueueViaArrayTests
+    public class QueueViaLinkedListTests
     {
         [Test]
         public void Enqueue_Test()
         {
-            IQueue<char> queue = new QueueViaArray<char>(5);
+            IQueue<char> queue = new QueueViaLinkedList<char>(5);
             queue.Enqueue('A');
             queue.Enqueue('B');
             queue.Enqueue('C');
@@ -26,7 +26,7 @@ namespace DataStructures.Stack.Tests.QueueTests
         [Test]
         public void Peek_Test()
         {
-            IQueue<char> queue = new QueueViaArray<char>(5);
+            IQueue<char> queue = new QueueViaLinkedList<char>(5);
             queue.Enqueue('A');
             queue.Enqueue('B');
             queue.Enqueue('C');
@@ -39,7 +39,7 @@ namespace DataStructures.Stack.Tests.QueueTests
             queue.Peek().Should().Be('A');
             queue.Peek().Should().Be('A');
 
-            Action act = () => new QueueViaArray<char>(5).Peek();
+            Action act = () => new QueueViaLinkedList<char>(5).Peek();
             act.Should().Throw<IndexOutOfRangeException>()
                 .WithMessage("Queue is empty.");
         }
@@ -47,7 +47,7 @@ namespace DataStructures.Stack.Tests.QueueTests
         [Test]
         public void Dequeue_Test()
         {
-            IQueue<char> queue = new QueueViaArray<char>(5);
+            IQueue<char> queue = new QueueViaLinkedList<char>(5);
             queue.Enqueue('A');
             queue.Enqueue('B');
             queue.Enqueue('C');

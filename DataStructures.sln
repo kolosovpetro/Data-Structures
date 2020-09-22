@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStrcutures.GraphViaAdja
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.HashTable", "DataStructures.HashTable\DataStructures.HashTable.csproj", "{37BF7CBA-A135-4358-B2F6-AB7B30618169}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Tests", "DataStructures.Tests\DataStructures.Tests.csproj", "{C526C681-C03B-45EA-AD41-44E5FD69AA6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{37BF7CBA-A135-4358-B2F6-AB7B30618169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37BF7CBA-A135-4358-B2F6-AB7B30618169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37BF7CBA-A135-4358-B2F6-AB7B30618169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C526C681-C03B-45EA-AD41-44E5FD69AA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C526C681-C03B-45EA-AD41-44E5FD69AA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C526C681-C03B-45EA-AD41-44E5FD69AA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C526C681-C03B-45EA-AD41-44E5FD69AA6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

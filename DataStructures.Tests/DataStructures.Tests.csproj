@@ -14,10 +14,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\DataStructures.QueueViaArray\DataStructures.QueueViaArray.csproj" />
       <ProjectReference Include="..\DataStructures.StackViaArray\DataStructures.StackViaArray.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="QueueViaArrayTest" />
       <Folder Include="StackViaArrayTest" />
     </ItemGroup>
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using StackLibrary.Interfaces;
+using DataStructures.StackViaArray.Interfaces;
 
 namespace DataStructures.StackViaArray.Implementation
 {

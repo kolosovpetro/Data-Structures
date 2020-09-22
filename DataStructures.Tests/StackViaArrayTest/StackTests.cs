@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using DataStructures.StackViaArray.Implementation;
+using DataStructures.StackViaArray.Interfaces;
 using FluentAssertions;
 using NUnit.Framework;
-using StackLibrary.Interfaces;
 
 namespace DataStructures.Tests.StackViaArrayTest
 {

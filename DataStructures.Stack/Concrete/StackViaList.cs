@@ -1,4 +1,4 @@
-﻿using DataStructures.Stack.Abstractions;
+﻿﻿using DataStructures.Stack.Abstractions;
 
 namespace DataStructures.Stack.Concrete
 {

@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{449FFD59-F67B-4ED3-A3AD-1583E0D51619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Stack", "DataStructures.Stack\DataStructures.Stack.csproj", "{266BD7AD-D5A0-4844-A977-A241A584E298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Queue", "DataStructures.Queue\DataStructures.Queue.csproj", "{B0793CEF-6F69-401D-BF7C-71AA31D0908F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.LinkedList", "DataStructures.LinkedList\DataStructures.LinkedList.csproj", "{EC05ADAC-8CFA-4589-B6B3-6F1A60E4CA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Graph", "DataStructures.Graph\DataStructures.Graph.csproj", "{32911B7D-3819-40C2-88BC-93CA2BE61A1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,21 @@ Global
 		{449FFD59-F67B-4ED3-A3AD-1583E0D51619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{449FFD59-F67B-4ED3-A3AD-1583E0D51619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{449FFD59-F67B-4ED3-A3AD-1583E0D51619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266BD7AD-D5A0-4844-A977-A241A584E298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266BD7AD-D5A0-4844-A977-A241A584E298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266BD7AD-D5A0-4844-A977-A241A584E298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266BD7AD-D5A0-4844-A977-A241A584E298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0793CEF-6F69-401D-BF7C-71AA31D0908F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0793CEF-6F69-401D-BF7C-71AA31D0908F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0793CEF-6F69-401D-BF7C-71AA31D0908F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0793CEF-6F69-401D-BF7C-71AA31D0908F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC05ADAC-8CFA-4589-B6B3-6F1A60E4CA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC05ADAC-8CFA-4589-B6B3-6F1A60E4CA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC05ADAC-8CFA-4589-B6B3-6F1A60E4CA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC05ADAC-8CFA-4589-B6B3-6F1A60E4CA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32911B7D-3819-40C2-88BC-93CA2BE61A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32911B7D-3819-40C2-88BC-93CA2BE61A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32911B7D-3819-40C2-88BC-93CA2BE61A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32911B7D-3819-40C2-88BC-93CA2BE61A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

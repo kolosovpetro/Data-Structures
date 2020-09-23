@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using DataStructures.LinkedList.Abstractions;
 
 namespace DataStructures.LinkedList.Concrete
@@ -58,12 +60,44 @@ namespace DataStructures.LinkedList.Concrete
 
         public ILinkedListNode<T> Find(T entity)
         {
-            throw new NotImplementedException();
-        }
+            var current = First;
 
+            while (current != null)
+            {
+                if (current.Value.Equals(entity))
+                    return current;
+                if (current.Next == null)
+                    break;
+                current = current.Next;
+            }
+
+            return null;
+        }
+        
+        // very not optimal solution for space and complexity
+        // there are 2x list in memory and O(n^2) time complexity
         public void Reverse()
         {
-            throw new NotImplementedException();
+            var queue = new Queue<ILinkedListNode<T>>();
+            var current = First;
+            
+            while (true)
+            {
+                queue.Enqueue(current);
+                if (current.Next == null)
+                    break;
+                current = current.Next;
+            }
+            
+            Clear();
+
+            while (queue.Any()) 
+                AddFirst(queue.Dequeue().Value);
+        }
+
+        public void Clear()
+        {
+            while (Count > 0) RemoveFirst();
         }
     }
 }

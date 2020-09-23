@@ -13,5 +13,6 @@
         bool Contains(T entity);
         ILinkedListNode<T> Find(T entity);
         void Reverse();
+        void Clear();
     }
 }

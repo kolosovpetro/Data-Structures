@@ -34,12 +34,12 @@ namespace DataStructures.LinkedList.Concrete
                 Last = null;
             Count--;
         }
-        
+
         public ILinkedListNode<T> AddLast(T entity)
         {
             var node = new LinkedListNode<T>(entity);
             Count++;
-            
+
             if (Last == null)
             {
                 Last = node;
@@ -48,15 +48,33 @@ namespace DataStructures.LinkedList.Concrete
             }
 
             var currentLast = Last;
-            if (currentLast != null) 
+            if (currentLast != null)
                 currentLast.Next = node;
             Last = node;
             return node;
         }
-        
+
         public void RemoveLast()
         {
-            throw new NotImplementedException();
+            if (IsEmpty)
+                throw new IndexOutOfRangeException("Linked list is empty.");
+
+            if (Count == 1)
+            {
+                First = null;
+                Last = null;
+                Count--;
+                return;
+            }
+
+            Count--;
+            var current = First;
+
+            while (current.Next != Last)
+                current = current.Next;
+
+            current.Next = null;
+            Last = current;
         }
 
         public bool Contains(T entity)

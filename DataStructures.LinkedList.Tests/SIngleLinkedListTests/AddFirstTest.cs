@@ -3,7 +3,7 @@ using DataStructures.LinkedList.Concrete;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace DataStructures.LinkedList.Tests.SIngleLinkedListTests
+namespace DataStructures.LinkedList.Tests.SingleLinkedListTests
 {
     [TestFixture]
     public class AddFirstTest
@@ -11,7 +11,7 @@ namespace DataStructures.LinkedList.Tests.SIngleLinkedListTests
         [Test]
         public void Add_First_Simple_Test()
         {
-            ILinkedList<char> linkedList = new SingleLinkedListTailless<char>();
+            ILinkedList<char> linkedList = new SingleLinkedList<char>();
             var a = linkedList.AddFirst('A');
             var b = linkedList.AddFirst('B');
             var c = linkedList.AddFirst('C');

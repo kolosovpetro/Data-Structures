@@ -3,25 +3,25 @@ using DataStructures.LinkedList.Concrete;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace DataStructures.LinkedList.Tests.SingleLinkedListTests
+namespace DataStructures.LinkedList.Tests.SingleLinkedListTaillessTests
 {
     [TestFixture]
-    public class ContainsTest
+    public class AddFirstTest
     {
         [Test]
-        public void Contains_Test()
+        public void Add_First_Simple_Test()
         {
-            ILinkedList<char> linkedList = new SingleLinkedList<char>();
+            ILinkedList<char> linkedList = new SingleLinkedListTailless<char>();
             var a = linkedList.AddFirst('A');
             var b = linkedList.AddFirst('B');
             var c = linkedList.AddFirst('C');
             var d = linkedList.AddFirst('D');
             linkedList.First.Value.Should().Be('D');
             linkedList.Count.Should().Be(4);
-            linkedList.Contains('A').Should().BeTrue();
-            linkedList.Contains('C').Should().BeTrue();
-            linkedList.Contains('D').Should().BeTrue();
-            linkedList.Contains('E').Should().BeFalse();
+            d.Next.Value.Should().Be('C');
+            c.Next.Value.Should().Be('B');
+            b.Next.Value.Should().Be('A');
+            a.Next.Should().BeNull();
         }
     }
 }

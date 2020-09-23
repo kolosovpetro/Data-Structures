@@ -13,7 +13,11 @@ namespace DataStructures.LinkedList.Tests.SingleLinkedListTests
         {
             ILinkedList<char> linkedList = new SingleLinkedList<char>();
             var a = linkedList.AddFirst('A');
+            linkedList.First.Value.Should().Be('A');
+            linkedList.Last.Value.Should().Be('A');
             var b = linkedList.AddFirst('B');
+            linkedList.First.Value.Should().Be('B');
+            linkedList.Last.Value.Should().Be('A');
             var c = linkedList.AddFirst('C');
             var d = linkedList.AddFirst('D');
             linkedList.First.Value.Should().Be('D');
@@ -22,6 +26,7 @@ namespace DataStructures.LinkedList.Tests.SingleLinkedListTests
             c.Next.Value.Should().Be('B');
             b.Next.Value.Should().Be('A');
             a.Next.Should().BeNull();
+            linkedList.Last.Value.Should().Be('A');
         }
     }
 }

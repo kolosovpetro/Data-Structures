@@ -11,14 +11,14 @@ namespace DataStructures.LinkedList.Concrete
         public int Count { get; private set; }
         public ILinkedListNode<T> First { get; private set; }
         public ILinkedListNode<T> Last { get; private set; }
-        
-        
+
 
         public ILinkedListNode<T> AddFirst(T entity)
         {
             var node = new LinkedListNode<T>(entity) {Next = First};
             First = node;
             Count++;
+            Last ??= node;
             return node;
         }
 
@@ -30,18 +30,30 @@ namespace DataStructures.LinkedList.Concrete
             var first = First;
             First = First.Next;
             first.Next = null;
+            if (Count == 1)
+                Last = null;
             Count--;
         }
-
-        // in current version of linked list it is not implemented
-        // However, it brakes ISP os SOLID
+        
         public ILinkedListNode<T> AddLast(T entity)
         {
-            throw new NotImplementedException();
-        }
+            var node = new LinkedListNode<T>(entity);
+            Count++;
+            
+            if (Last == null)
+            {
+                Last = node;
+                First = node;
+                return node;
+            }
 
-        // in current version of linked list it is not implemented
-        // However, it brakes ISP os SOLID
+            var currentLast = Last;
+            if (currentLast != null) 
+                currentLast.Next = node;
+            Last = node;
+            return node;
+        }
+        
         public void RemoveLast()
         {
             throw new NotImplementedException();

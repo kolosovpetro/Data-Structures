@@ -17,8 +17,4 @@
       <ProjectReference Include="..\DataStructures.LinkedList\DataStructures.LinkedList.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="SingleLinkedListTests" />
-    </ItemGroup>
-
 </Project>

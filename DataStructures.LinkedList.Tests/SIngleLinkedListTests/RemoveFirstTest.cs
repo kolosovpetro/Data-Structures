@@ -12,7 +12,7 @@ namespace DataStructures.LinkedList.Tests.SIngleLinkedListTests
         [Test]
         public void Remove_First_Test()
         {
-            ILinkedList<char> linkedList = new SingleLinkedList<char>();
+            ILinkedList<char> linkedList = new SingleLinkedListTailless<char>();
             var a = linkedList.AddFirst('A');
             var b = linkedList.AddFirst('B');
             var c = linkedList.AddFirst('C');

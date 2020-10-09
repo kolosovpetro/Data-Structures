@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{449FFD59-F67B-4ED3-A3AD-1583E0D51619}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Stack", "DataStructures.Stack\DataStructures.Stack.csproj", "{266BD7AD-D5A0-4844-A977-A241A584E298}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Queue", "DataStructures.Queue\DataStructures.Queue.csproj", "{B0793CEF-6F69-401D-BF7C-71AA31D0908F}"
@@ -20,16 +18,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Vector", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Vector.Tests", "DataStructures.Vector.Tests\DataStructures.Vector.Tests.csproj", "{EC4CF54B-3650-406B-9EB2-2515F7AE7F22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Hashtable", "DataStructures.Hashtable\DataStructures.Hashtable.csproj", "{02665ED6-5EA7-4C75-8764-21940D718660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Hashtable.Tests", "DataStructures.Hashtable.Tests\DataStructures.Hashtable.Tests.csproj", "{6799CB32-6329-4376-901D-C33BA702F887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{449FFD59-F67B-4ED3-A3AD-1583E0D51619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{449FFD59-F67B-4ED3-A3AD-1583E0D51619}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{449FFD59-F67B-4ED3-A3AD-1583E0D51619}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{449FFD59-F67B-4ED3-A3AD-1583E0D51619}.Release|Any CPU.Build.0 = Release|Any CPU
 		{266BD7AD-D5A0-4844-A977-A241A584E298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{266BD7AD-D5A0-4844-A977-A241A584E298}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{266BD7AD-D5A0-4844-A977-A241A584E298}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -66,5 +64,13 @@ Global
 		{EC4CF54B-3650-406B-9EB2-2515F7AE7F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC4CF54B-3650-406B-9EB2-2515F7AE7F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC4CF54B-3650-406B-9EB2-2515F7AE7F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02665ED6-5EA7-4C75-8764-21940D718660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02665ED6-5EA7-4C75-8764-21940D718660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02665ED6-5EA7-4C75-8764-21940D718660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02665ED6-5EA7-4C75-8764-21940D718660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6799CB32-6329-4376-901D-C33BA702F887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6799CB32-6329-4376-901D-C33BA702F887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6799CB32-6329-4376-901D-C33BA702F887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6799CB32-6329-4376-901D-C33BA702F887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
